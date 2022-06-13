@@ -1,7 +1,6 @@
 const { Plugin } = require('powercord/entities');
-const { React, channels, getModule } = require("powercord/webpack"); // You need React, so we Import it here
+const { channels, getModule } = require("powercord/webpack"); // You need React, so we Import it here
 const fs = require('fs');
-const path = require('path');
 
 const Settings = require("./components/settings.jsx"); // get the path to your Settings file
 const mime_types = require("./components/mimetypes")
@@ -10,7 +9,7 @@ module.exports = class MediaShortcut extends Plugin {
 	async startPlugin() {
 		powercord.api.settings.registerSettings(this.entityID, {
 			category: this.entityID,
-			label: '😒 Media Shortcuts',
+			label: 'Media Shortcuts',
 			render: Settings
 		});
 

@@ -1,2 +1,3 @@
-# media-shortcut
+# Media Shortcut
+
 Powercord plugin for media shortcut
